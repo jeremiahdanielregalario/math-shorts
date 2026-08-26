@@ -173,7 +173,7 @@ class LimitSecretlyGeometry(Scene):
 
         ra_size = 0.15
         ap_dir = mid / np.linalg.norm(mid)
-        side_dir = np.array([-ap_dir[1], ap_dir[0], 0])
+        side_dir = (v1 - v0) / np.linalg.norm(v1 - v0)
         corner = mid - ra_size * ap_dir + ra_size * side_dir
         ra = VGroup(
             Line(
