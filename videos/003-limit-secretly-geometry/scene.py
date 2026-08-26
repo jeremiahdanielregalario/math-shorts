@@ -171,7 +171,7 @@ class LimitSecretlyGeometry(Scene):
         apothem_line = Line(ORIGIN, mid, color=APOthem_COL, stroke_width=3)
         self.play(Create(apothem_line), run_time=0.8)
 
-        ra_size = 0.25
+        ra_size = 0.15
         ap_dir = mid / np.linalg.norm(mid)
         side_dir = np.array([-ap_dir[1], ap_dir[0], 0])
         corner = mid - ra_size * ap_dir + ra_size * side_dir
