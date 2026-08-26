@@ -1,0 +1,26 @@
+[project]
+name = "math-shorts"
+version = "0.1.0"
+description = "Short-form mathematical videos created with Manim Community Edition"
+requires-python = ">=3.11"
+dependencies = [
+    "manim>=0.18",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+]
+
+[tool.setuptools.packages.find]
+include = ["shared*"]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]

@@ -1,0 +1,3 @@
+from shared.styles import VERTICAL_FRAME, ACCENT_COLOR, MATH_FONT_SIZE
+
+__all__ = ["VERTICAL_FRAME", "ACCENT_COLOR", "MATH_FONT_SIZE"]
