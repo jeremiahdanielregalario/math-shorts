@@ -1,0 +1,122 @@
+# "Primes Are Basis Vectors" — Narrator Script
+# Video: 004 — Arithmetic as Linear Algebra (Primes as Basis)
+# Duration: ~1:45 (105s) · 9:8 aspect, black background
+
+============================================================
+[0:00–0:12] — Hook / the fundamental theorem
+============================================================
+So... take a number. Any positive number, like 60. You can always break
+it down into its prime building blocks — 2 twos, a 3, and a 5. Works for
+literally every positive integer, and it works uniquely — no two different
+ways to do it. Mathematicians call this the Fundamental Theorem of
+Arithmetic, but honestly? That name undersells it, because what it's really
+telling us is something almost scandalous: the primes aren't just a
+curiosity. They're the atomic elements that every whole number is secretly
+made of.
+
+============================================================
+[0:12–0:34] — Primes as building blocks
+============================================================
+Look — 12 is really just a couple of 2s and a 3. 18? Same ingredients,
+shuffled. 100? Just 2s and 5s in the right amounts. Every number you can
+think of is just primes, multiplied together in the right proportions.
+
+Now here's the thought that keeps me up at night... what if the exponents
+didn't have to be positive? What if they could be any integer at all —
+could we then describe every positive fraction, every positive rational
+number, with the exact same system? Let's hold that thought. For now, set
+it aside.
+
+============================================================
+[0:34–0:46] — But first: what's a basis?
+============================================================
+Because this setup — small ingredients that combine to build everything
+else — should feel familiar if you've ever poked at linear algebra. In
+three-dimensional space, we have these three "basis vectors": e1 shoots
+along one direction, e2 along another, e3 up the third. And the entire
+trick of the whole space is that any point, any vector at all, is just "a"
+times the first arrow, plus "b" times the second, plus "c" times the third.
+The basis gives you three building blocks that can reach everywhere.
+
+============================================================
+[0:46–1:05] — THE aha — primes as coordinates
+============================================================
+But wait. Look at your numbers again. Sixty equals 2², times 3¹, times 5¹.
+Now watch what happens if I treat the primes like those basis vectors —
+and pull the exponents out, and drop them into coordinate slots. Indexed
+by the primes: 2, 3, 5, 7, 11, 13, and so on, forever.
+
+Then 60 becomes the tuple (2, 1, 1, 0, 0, …). The primes are the axes. The
+exponents are the coordinates. Every integer is secretly just a list of
+prime-coordinates, most of which are zero.
+
+============================================================
+[1:05–1:25] — Multiplication becomes addition
+============================================================
+Now let's multiply. Take 12 — that's (2, 1, 0, …). And 18 — that's
+(1, 2, 0, …). Multiply them together and you get 216, which factors as
+2³ times 3³. So look at those coordinate rows when you multiply:
+(2,1,0) plus (1,2,0) — they just ADD to give (3,3,0).
+
+Multiplication, this whole time... was just addition in disguise. The
+moment you view numbers through the lens of the primes, multiplying
+becomes adding the exponents.
+
+============================================================
+[1:25–1:40] — The pattern crystallizes
+============================================================
+So a pattern is forming, and it's not subtle. In the prime-world: addition
+maps to multiplication. Exponentiation maps to scalar multiplication. And
+the primes... the primes are the basis. It's a perfect mirror of linear
+algebra — a vector space hiding inside ordinary arithmetic.
+
+============================================================
+[1:40–2:00] — The catch: can it be a vector space?
+============================================================
+But wait. If this is really a vector space, then 60 should have coordinates
+and there should be scalars to scale those coordinates with... but here's
+the rub. The exponents don't go down — they only grow: 0, 1, 2, 3, and up.
+And if we try to take a step backwards? A negative exponent like 2 to the
+minus 1, that's one-half — and now we've been pushed clean out of the
+integers, into fractions.
+
+============================================================
+[2:00–2:20] — Positive rationals to the rescue
+============================================================
+Which is fine — because that was the whole question we shelved earlier!
+Let negative exponents in, and suddenly fractions are just numbers with a
+few negative coordinates. Twelve twenty-fifths is 2² times 3¹ times 5⁻² —
+that's (2, 1, −2, 0, …).
+
+And the payoff is enormous: every positive rational number — every fraction
+you've ever met — is just a finitely-supported list of integer coordinates.
+No exceptions. The whole set of positive rationals slots perfectly into
+this coordinate system.
+
+============================================================
+[2:20–2:40] — The climax: not a vector space, but a module
+============================================================
+So the big question: is this actually a vector space? Almost — the
+coordinates are the integers, the natural coordinate object is ℤ⁽ᴺ⁾, the
+direct sum of ℤ over the primes. But here's what makes a vector space a
+vector space: you need scalars that can be divided. And the integers are
+not a field — you can't divide 1 by 2 and still be an integer. So this
+isn't a vector space. It's something a little more humble and a lot more
+elegant: a FREE ℤ-module.
+
+============================================================
+[2:40–2:52] — The punchline
+============================================================
+And that's the resolution: ℚ positive is isomorphic to the direct sum of ℤ
+from every prime — which is just a mathematician's way of saying the primes
+are a basis of the arithmetic of fractions. Not a vector space, but a free
+ℤ-module, where the operation is multiplication and the basis is the primes.
+The two things you learned years apart — prime factorization and linear
+algebra — were the same idea all along.
+
+============================================================
+[2:52–3:00] — The hook
+============================================================
+Which, of course, leaves me wondering... what happens if we just CHANGED
+the scalars? What if the exponents could be arbitrary? But that's a story
+for another video.
